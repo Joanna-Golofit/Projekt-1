@@ -1,38 +1,42 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
 
-  <link
+    <title>Document</title>
+
+    <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.0.0/modern-normalize.min.css"
     />
     <link rel="stylesheet" href="./css/styles.css" />
+  </head>
+  <body>
+    <header>
+      <!------------------------------- PROJEKT ------------------------------->
 
-</head>
-<body>
-  <header>
-<!------------------------------- PROJEKT ------------------------------->
-<!-- HEADER -->
-<header class="header">
+      <!-- HEADER -->
       <div class="header__container container">
-
         <a class="header__logo logo" href="./index.html">
           <svg class="header__logo-icon">
             <use href="./images/icons.svg#icon-logo"></use>
           </svg>
         </a>
 
-        <nav class="header__navigation">                 
-          <ul class="header__menu list">
+        <nav class="header__navigation">
+          <ul class="header__list list">
             <li class="header__item">
               <a class="header__link link" href="#">Studying program</a>
             </li>
             <li class="header__item">
-              <a class="header__link link current" href="#">about</a>
+              <a class="header__link link link--current" href="#">about</a>
             </li>
             <li class="header__item">
               <a class="header__link link" href="#">training options</a>
@@ -43,102 +47,114 @@
           </ul>
         </nav>
 
-        <button class="header__btn btn btn--transparent" type="button" data-modal-open>consultation by phone</button>
+        <button
+          class="header__btn btn btn--transparent"
+          type="button"
+          data-modal-open
+        >
+          consultation by phone
+        </button>
 
         <!-- mobile hamburger -->
         <button class="header__btn-hamburger" type="button" mobile-menu-open>
           <svg class="header__btn-icon" width="21" height="14">
-            <use href="./images/icons.svg#icon-menu-small-hamburger"></use>            
-          </svg>          
-        </button> 
+            <use href="./images/icons.svg#icon-menu-small-hamburger"></use>
+          </svg>
+        </button>
         <!-- END mobile hamburger -->
-        
       </div>
-<!-- END HEADER -->
-
-  </header>
-  <main>
-
-<!--  HERO  -->
-    <section class="hero__section section">
-      <div class="hero__container container">
-        <h1 class="hero__header">Complex preparation for English UPE</h1>
-        <p class="hero__text-top">It won’t be easy.</p>
-        <p class="hero__text-bottom">But you are guaranteed to get <span class="hero__text-bottom--accent accent"> +25 points</span></p>
-        <button class="hero__btn btn btn--filled" type="button">i want a free lesson</button>
-      </div>
-      <div class="hero__img"></div>
-    </section>
-<!--  END HERO  -->
-
- <!--  ADVANTAGES  -->
-      <!-- <section class="advantages__section section">
-        <ul class="advantages list">
-          <li class="advantages__item">
-            <svg class="advantages__icon">
-              <use href="./images/icons.svg#icon-advantages-1"></use>
-            </svg>
-            <p class="advantages__description">Adapted author's UPE program</p>
-          </li>
-          <li class="advantages__item">
-            <svg class="advantages__icon">
-              <use href="./images/icons.svg#icon-advantages-2"></use>
-            </svg>
-            <p class="advantages__description">Modern teaching methods</p>
-          </li>
-          <li class="advantages__item">
-            <svg class="advantages__icon">
-              <use href="./images/icons.svg#icon-advantages-3"></use>
-            </svg>
-            <p class="advantages__description">Financial guarantee the result</p>
-          </li>
-        </ul>
-      
-      </section> -->
-<!--  END ADVANTAGES  -->
-
-
-  </main>
-
-    <!--   mobile-menu -->      
-      <div class="backdrop is-hidden" mobile-menu>
-        <div class="menu-open__mobile-modal">
-          <button class="menu-open__btn-close" type="button" mobile-menu-close>
-            <svg class="btn-close__icon" width="18" height="18">
-              <use href="./images/icons.svg#icon-modal-close"></use>
-            </svg>
+      <!-- END HEADER -->
+    </header>
+    <main>
+      <!--  HERO  -->
+      <section class="hero__section section">
+        <div class="hero__container container">
+          <h1 class="hero__header">Complex preparation for English UPE</h1>
+          <p class="hero__text-top">It won’t be easy.</p>
+          <p class="hero__text-bottom">But you are guaranteed to get&nbsp;</p>
+          <span class="hero__text-bottom hero__text-bottom--accent accent"
+            >+25 points</span
+          >
+          <button class="hero__btn btn btn--filled" type="button">
+            i want a free lesson
           </button>
-           <a class="menu-open__logo logo" href="./index.html">
-            <svg class="menu-open__logo-icon">
-              <use href="./images/icons.svg#icon-logo-white"></use>
-            </svg>
-          </a>
-
-          <nav class="menu-open__navigation">
-                  
-            <ul class="menu-open__menu list">
-              <li class="menu-open__item">
-                <a class="menu-open__link link" href="#">Studying program</a>
-              </li>
-              <li class="menu-open__item">
-                <a class="menu-open__link link current" href="#">About</a>
-              </li>
-              <li class="menu-open__item">
-                <a class="menu-open__link link" href="#">Training options</a>
-              </li>
-              <li class="menu-open__item">
-                <a class="menu-open__link link" href="#">Contacts</a>
-              </li>
-            </ul>
-          </nav>
-          
-          <button class="menu-open__btn btn btn--transparent" type="button">consultation by phone</button>
         </div>
+        <div class="hero__img"></div>
+      </section>
+      <!--  END HERO  -->
+
+      <!--  ADVANTAGES  -->
+      <section class="advantages__section section">
+        <div class="advantages__container container">
+          <ul class="advantages__list list">
+            <li class="advantages__item">
+              <!-- <svg class="advantages__icon">
+                <use href="./images/icons.svg#icon-advantages-1"></use>
+              </svg> -->
+              <p
+                class="advantages__description advantages__description--program"
+              >
+                Adapted author's UPE program
+              </p>
+            </li>
+            <li class="advantages__item">
+              <!-- <svg class="advantages__icon">
+                <use href="./images/icons.svg#icon-advantages-2"></use>
+              </svg> -->
+              <p class="advantages__description">Modern teaching methods</p>
+            </li>
+            <li class="advantages__item">
+              <!-- <svg class="advantages__icon">
+                <use href="./images/icons.svg#icon-advantages-3"></use>
+              </svg> -->
+              <p class="advantages__description">
+                Financial guarantee the result
+              </p>
+            </li>
+          </ul>
+        </div>
+      </section>
+      <!--  END ADVANTAGES  -->
+    </main>
+
+    <!--   mobile-menu -->
+    <div class="backdrop is-hidden" mobile-menu>
+      <div class="menu-open__mobile-modal">
+        <button class="menu-open__btn-close" type="button" mobile-menu-close>
+          <svg class="btn-close__icon" width="18" height="18">
+            <use href="./images/icons.svg#icon-modal-close"></use>
+          </svg>
+        </button>
+        <a class="menu-open__logo logo" href="./index.html">
+          <svg class="menu-open__logo-icon">
+            <use href="./images/icons.svg#icon-logo-white"></use>
+          </svg>
+        </a>
+
+        <nav class="menu-open__navigation">
+          <ul class="menu-open__list list">
+            <li class="menu-open__item">
+              <a class="menu-open__link link" href="#">Studying program</a>
+            </li>
+            <li class="menu-open__item">
+              <a class="menu-open__link link link--current" href="#">About</a>
+            </li>
+            <li class="menu-open__item">
+              <a class="menu-open__link link" href="#">Training options</a>
+            </li>
+            <li class="menu-open__item">
+              <a class="menu-open__link link" href="#">Contacts</a>
+            </li>
+          </ul>
+        </nav>
+
+        <button class="menu-open__btn btn btn--transparent" type="button">
+          consultation by phone
+        </button>
       </div>
-   <!-- END  mobile-menu -->
+    </div>
+    <!-- END  mobile-menu -->
 
-    
     <script src="./js/mobile-menu.js"></script>
-
-</body>
+  </body>
 </html>

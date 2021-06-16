@@ -38,6 +38,9 @@ img {
   align-items: center;
   justify-content: space-between;
 }
+.advantages__container {
+  display: flex;
+}
 
 @media screen and (min-width: 480px) {
   .container {
@@ -56,6 +59,27 @@ img {
   }
 }
 
+/*  <!-- section -->  */
+.hero__section {
+  padding-bottom: 47.5px;
+ background-image: url("../images/hero-wave-desktop.jpg");
+ /* contain nie daje takiego cienia */
+   /* background-size: contain; */
+   /* background-size: auto; */
+   /* cover jakos lepiej z cieniem wyglada */
+   /* background-size: cover; */
+   background-size: 480px;
+  background-position: bottom;
+  background-repeat: no-repeat;
+ /* background-color: E5E5E5; */
+ /* background-color: red; */
+}
+
+.advantages__section {
+  background-color: #E5E5E5;
+}
+
+/* section */
 
 /* <!-- HEADER --> */
 .header__navigation,
@@ -108,9 +132,9 @@ img {
   font-size: 14px;
   line-height: 22px;
   /* or 157% */
-
-  display: flex;
-  align-items: center;
+  display: inline;
+  /* display: flex; */
+  /* align-items: center; */
   letter-spacing: 0.08em;
 
   color: #111518;
@@ -159,6 +183,7 @@ img {
   height: 178px;
   margin-left: auto;
   margin-right: auto;
+  /* margin-bottom: 47.5px; */
   /* background-color: red; */
   background-image: url("../images/header-mobile.png");
   /* background-size: cover; */
@@ -175,8 +200,8 @@ img {
 }
 .backdrop {
   padding-top: 30px;
-  padding-right: 20px;
-  padding-left: 20px;
+  padding-right: 15px;
+  padding-left: 15px;
   position: absolute;
   background-color: rgba(17, 21, 24, 0.9);
   width: 100%;
@@ -216,8 +241,69 @@ color: #FFFFFF;
   margin-top: 50px;margin-bottom: 50px;
 }
 
-.current {
+.link--current {
   color: #FF6B09;
 }
 
 /* <!--   END mobile-menu -->   */
+
+/* .advantages */
+
+/* .advantages__description::before {
+  content: "";
+    width: 59px;
+  height: 60px;
+    background-color: #2196f3;
+  
+  background-image: url("./images/advantages-1.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+} */
+
+.advantages__description::before {
+  display: block;
+  content: "";
+  width: 59px;
+  height: 60px;
+  
+  background-image: url(../images/advantages-1.svg);
+  background-repeat: no-repeat;
+  background-position: center; 
+  background-size: contain;
+
+  position: relative;
+  top: 65px;
+  left: -70px;
+}
+
+/* .advantages__item {
+  position: relative;
+  display: block;
+  margin-left: 80px;
+} */
+.advantages__list {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-right: auto;
+  margin-left: auto;
+}
+.advantages__description {
+  /* margin-left: 60px; */
+  width: 90px;
+
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 164.9%;
+  /* or 23px */
+
+  letter-spacing: 0.08em;
+
+  color: #111518;
+}
+
+.advantages__description--program {  
+  width: 147px;
+}
