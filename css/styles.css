@@ -22,11 +22,6 @@ img {
   text-decoration: none;
 }
 
-
-
-
-
-
 .container {
   width: 100%;
   padding: 0 20px;
@@ -46,7 +41,6 @@ img {
   .container {
     margin: auto;
   }
-
 }
 @media screen and (min-width: 768px) {
   .container {
@@ -58,11 +52,6 @@ img {
     margin: auto;
   }
 }
-
-
-
-
-
 
 /* <!-- HEADER --> */
 .header__navigation,
@@ -84,13 +73,13 @@ img {
 }
 
 @media screen and (min-width: 768px) {
- .header__btn {
-   display: block;
+  .header__btn {
+    display: block;
     margin-right: 101px;
   }
- .header__logo-icon {
-  width: 128px;
-  height: 45px;
+  .header__logo-icon {
+    width: 128px;
+    height: 45px;
   }
   .header__btn-hamburger {
     top: 43px;
@@ -99,22 +88,21 @@ img {
 
 /* <!-- END HEADER --> */
 
-
 /* <!--  HERO  --> */
 
 .hero__section {
   padding-bottom: 47.5px;
- background-image: url("../images/hero-wave-desktop.jpg");
- /* contain nie daje takiego cienia */
-   background-size: contain;
-   /* background-size: auto; */
-   /* cover jakos lepiej z cieniem wyglada */
-   /* background-size: cover; */
+  background-image: url('../images/hero-wave-desktop.jpg');
+  /* contain nie daje takiego cienia */
+  background-size: contain;
+  /* background-size: auto; */
+  /* cover jakos lepiej z cieniem wyglada */
+  /* background-size: cover; */
   /* background-size: 480px; */
   background-position: bottom;
   background-repeat: no-repeat;
- background-color: E5E5E5;
- /* background-color: red; */
+  background-color: E5E5E5;
+  /* background-color: red; */
 }
 
 /* .advantages__section {
@@ -145,7 +133,7 @@ img {
   align-items: center;
   letter-spacing: 0.08em;
 
-  color: #B9B9B9;
+  color: #b9b9b9;
 }
 .hero__text-bottom {
   font-family: Montserrat;
@@ -162,7 +150,7 @@ img {
   color: #111518;
 }
 .accent {
-  color: #FF6B09;
+  color: #ff6b09;
 }
 
 .btn {
@@ -172,9 +160,9 @@ img {
   font-style: normal;
   font-weight: bold;
   font-size: 12px;
-  line-height: 15px; 
+  line-height: 15px;
   /* align-items: center; */
-   /* display: flex; */
+  /* display: flex; */
   /* justify-items: center; */
   /* text-align: center; */
   letter-spacing: 0.08em;
@@ -182,15 +170,15 @@ img {
 }
 
 .btn--filled {
-  color: #FFFFFF;
-  background: #FF6B09;
+  color: #ffffff;
+  background: #ff6b09;
   border: none;
 }
 
 .btn--transparent {
-  color: #FF6B09;
+  color: #ff6b09;
   background: transparent;
-  border: 2px solid #FF6B09;
+  border: 2px solid #ff6b09;
 }
 
 .hero__btn {
@@ -207,7 +195,7 @@ img {
   margin-right: auto;
   /* margin-bottom: 47.5px; */
   /* background-color: red; */
-  background-image: url("../images/header-mobile.png");
+  background-image: url('../images/header-mobile.png');
   /* background-size: cover; */
 }
 
@@ -217,8 +205,6 @@ img {
   }
 }
 /* <!--  END HERO  --> */
-
-
 
 /* <!--   mobile-menu -->   */
 .is-hidden {
@@ -253,16 +239,16 @@ img {
   right: 20px;
 }
 .menu-open__link {
-font-family: Montserrat;
-font-style: normal;
-font-weight: 800;
-font-size: 20px;
-line-height: 180%;
-/* or 36px */
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: 800;
+  font-size: 20px;
+  line-height: 180%;
+  /* or 36px */
 
-letter-spacing: 0.03em;
+  letter-spacing: 0.03em;
 
-color: #FFFFFF;
+  color: #ffffff;
 }
 
 .menu-open__navigation {
@@ -271,12 +257,12 @@ color: #FFFFFF;
 }
 
 .link--current {
-  color: #FF6B09;
+  color: #ff6b09;
 }
 
 @media screen and (min-width: 768px) {
   .backdrop {
-  padding-top: 41px;
+    padding-top: 41px;
   }
   .menu-open__logo-icon {
     width: 128px;
@@ -286,8 +272,8 @@ color: #FFFFFF;
     display: none;
   }
   .menu-open__navigation {
-      display: flex;
-      justify-content: center;
+    display: flex;
+    justify-content: center;
   }
 }
 
@@ -308,13 +294,13 @@ color: #FFFFFF;
 
 .advantages__description::before {
   display: block;
-  content: "";
+  content: '';
   width: 59px;
   height: 60px;
-  
+
   background-image: url(../images/advantages-1.svg);
   background-repeat: no-repeat;
-  background-position: center; 
+  background-position: center;
   background-size: contain;
 
   position: relative;
@@ -350,6 +336,6 @@ color: #FFFFFF;
   color: #111518;
 }
 
-.advantages__description--program {  
+.advantages__description--program {
   width: 147px;
 }
